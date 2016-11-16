@@ -2,10 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -27,7 +26,7 @@
                 Гостиницы
               </span>
             </li>
-            <li> 
+            <li>
               <a href="#">
                 Карта штата
               </a>
@@ -43,14 +42,14 @@
       <div class="filter clearfix">
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-infrastructure">
-            <legend>  
+            <legend>
               Инфраструктура:
-            </legend>  
+            </legend>
             <input type="checkbox" id="pool" checked>
             <label for="pool">
               Бассейн
             </label>
-            <input type="checkbox" id="parking">
+            <input type="checkbox" id="parking" disabled>
             <label for="parking">
               Парковка
             </label>
@@ -60,9 +59,9 @@
             </label>
           </fieldset>
           <fieldset class="filter-housing-type">
-            <legend>  
+            <legend>
               Тип жилья:
-            </legend>  
+            </legend>
             <input type="checkbox" id="hotel" checked>
             <label for="hotel">
               Гостиница
@@ -71,7 +70,7 @@
             <label for="motel">
               Мотель
             </label>
-            <input type="checkbox" id="apartments" checked>
+            <input type="checkbox" id="apartments" checked disabled>
             <label for="apartments">
               Апартаменты
             </label>
@@ -96,7 +95,7 @@
               </button>
             </div>
           </div>
-        </form>  
+        </form>
       </div>
       <div class="sort-filter clearfix"> 
         <h2>
@@ -105,32 +104,32 @@
         <span>
           Сортировка:
         </span>
-        <ul class="sort-elements"> 
-          <li class="active-sort">        
+        <ul class="sort-elements">
+          <li class="active-sort">
             <a href="#">
               По цене
             </a>
           </li>
-          <li>  
+          <li>
             <a href="#">
               По типу
             </a>
           </li>
-          <li>  
+          <li>
             <a href="#">
               По рейтингу
             </a>
           </li>
         </ul> 
         <div class="triangles">
-          <a class="triangle-up" href="#">
+          <a href="#" class="triangle-up">
           </a>
-          <a class="triangle-down" href="#">
-		  </a>
-        </div>  
+          <a href="#" class="triangle-down">
+          </a>
+        </div>
       </div>
       <div class="catalog-items">
-        <div class="catalog-item">
+        <div class="catalog-item clearfix">
           <div class="catalog-item-img">
             <img src="img/hotel-img.jpg" width="135" height="90"  alt="Гостиница">
           </div>
@@ -165,11 +164,11 @@
              <div class="rating-block">
                <span>
                  Рейтинг: 8,5
-               </span>  
+               </span>
              </div>
           </div>
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item clearfix">
           <div class="catalog-item-img">
             <img src="img/motel-img.jpg" width="135" height="90" alt="Мотель">
           </div>
@@ -204,7 +203,7 @@
             </div>
           </div>
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item clearfix">
           <div class="catalog-item-img">
             <img src="img/apartments-img.jpg" width="135" height="90" alt="Мотель">
           </div>
@@ -241,13 +240,11 @@
             </div>
           </div>
         </div>
-      </div> 
-    </main> 
+      </div>
+    </main>
     <footer class="main-footer container clearfix">
       <div class="hashtag">
-        <b>
-          #visitsedona
-        </b>
+        #visitsedona
       </div>
       <section class="footer-social">
         <a href="#" class="social-btn social-btn-tw">
@@ -261,11 +258,11 @@
         </a>
       </section>
       <div class="footer-copyright">
-        <p class="author">
+        <span>
           website by
-        </p>
-        <div class="author-logo">
-        </div>
+        </span>
+        <a href="https://htmlacademy.ru/" class="author-logo">
+        </a>
       </div>
     </footer>
   </body>

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-   <link href="css/style.css" rel="stylesheet">
-   <link href="css/normalize.css" rel="stylesheet">
+    <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
-   <meta charset="utf-8">
-   <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style-min.css." rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -65,12 +64,11 @@
             </p>
           </div>
           <div class="city-image">
-            <img src="img/house-img.jpg" height="257" width="800" alt="Город">
+            <img src="img/house-img.jpg" height="256" width="800" alt="Город">
           </div> 
         </div>
         <div class="recomendations-block">
           <div class="recomendations-item housing">
-            <img src="img/housing-icon.png" width="75" height="72"  alt="Домик">
             <h3>
               Жилье
             </h3>
@@ -79,7 +77,6 @@
             </p>
           </div>
           <div class="recomendations-item eat">
-            <img src="img/eat-icon.png" width="74" height="70" alt="Гамбургер">
             <h3>
               Еда
             </h3>
@@ -88,7 +85,6 @@
             </p>
           </div>
           <div class="recomendations-item souvenirs">
-            <img src="img/souvenirs-icon.png" width="64" height="76" alt="Коробочка">
             <h3>
               Сувениры
             </h3>
@@ -113,7 +109,7 @@
           </div>
           <div class="bridge-image">
             <img src="img/bridge-img.jpg" height="256" width="800" alt="Мост">
-          </div> 
+          </div>
         </div>
         <div class="clearfix">
           <div class="features-desc square">
@@ -151,35 +147,33 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="search-block">
-          <h2 class="search-title">
-            Заинтересовались?
-          </h2>
-          <p>
-            Укажите предполагаемые даты поездки,
-            <br>
-            и мы  покажем вам лучшие предложения гостиниц в седоне
-          </p>
-          <a href="#" class="btn-search">
-            Поиск гостиницы в седоне
-          </a>
-        </div>
+      <div class="search-block container">
+        <h2 class="search-title">
+          Заинтересовались?
+        </h2>
+        <p>
+          Укажите предполагаемые даты поездки,
+          <br>
+          и мы  покажем вам лучшие предложения гостиниц в седоне
+        </p>
+        <a href="#" class="btn-search">
+          Поиск гостиницы в седоне
+        </a>
       </div>
       <div>
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31144.737479295654!2d-111.80183512783616!3d34.86408467299778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da157b96b661f%3A0x4399a99c807eb366!2zMjAgQVotODlBLCBTZWRvbmEsIEFaIDg2MzM2LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1479034373627" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31144.737479295654!2d-111.80183512783616!3d34.86408467299778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da157b96b661f%3A0x4399a99c807eb366!2zMjAgQVotODlBLCBTZWRvbmEsIEFaIDg2MzM2LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1479034373627" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
           <div class="order-form">
-            <form action="/echo" method="post">
+            <form action="https://echo.htmlacademy.ru" method="post">
               <div class="date-choose">
-                <label for="date-enter">Дата заезда:</label> 
+                <label class="date-enter" for="date-enter">Дата заезда:</label> 
                 <input type="text" name="date-enter" id="date-enter">
                 <button type="button" title="Выбрать дату">
                 </button>
               </div>
               <div class="date-choose">
-                <label for="date-out">Дата выезда:</label> 
+                <label class="date-out" for="date-out">Дата выезда:</label> 
                 <input type="text" name="date-out" id="date-out">
                 <button type="button" title="Выбрать дату">
                 </button>
@@ -202,19 +196,15 @@
                   </button>
                 </div>
               </div>
-              <div class="form-button">
-                  <input type="submit" value="Найти">
-              </div>
-            </form>  
+              <input class="form-button" type="submit" value="Найти">
+            </form>
           </div>
         </div>
       </div>
     </main>
     <footer class="main-footer container clearfix">
       <div class="hashtag">
-        <b>
-          #visitsedona
-        </b>
+        #visitsedona
       </div>
       <section class="footer-social">
         <a href="#" class="social-btn social-btn-tw">
@@ -228,14 +218,15 @@
         </a>
       </section>
       <div class="footer-copyright">
-        <p class="author">
+        <span>
           website by
-        </p>
-        <a class="author-logo">
+        </span>
+        <a href="https://htmlacademy.ru/" class="author-logo">
         </a>
       </div>
     </footer>
-    <script src="js/script.js">
+    <script src="js/script-min.js">
     </script>
   </body>
 </html>
+
