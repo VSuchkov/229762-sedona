@@ -284,12 +284,14 @@ img {
 .date-choose input {
   margin: 0;
   width: 307px;
-  height: 37px;
+  height: 34px;
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: none;
 }
 .date-choose input:hover {
-  width: 306px;
+  width: 307px;
   height: 34px;
   background-color: #ffffff;
   border-top: 2px solid #e5e5e5;
