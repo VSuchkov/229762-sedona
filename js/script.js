@@ -11,9 +11,9 @@ var childrenMinus = popup.querySelector(".children-minus");
 var childrenGuests = popup.querySelector("#children");
 var adultsGuests = popup.querySelector("#adults");
 
-popup.classList.add("order-form-hidden");
+  popup.classList.add("order-form-hidden");
 
-adultsMinus.addEventListener("click", function(event) {
+  adultsMinus.addEventListener("click", function(event) {
   event.preventDefault();
     adultsGuests.value = parseInt(adultsGuests.value) - 1;
     if(adultsGuests.value < 0) {

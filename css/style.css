@@ -52,6 +52,15 @@ img {
   width: 1200px;
   margin: 0 auto;
 }
+.main-navigation .active-menu {
+  color: #766357;
+}
+.main-navigation .active-menu:hover {
+  color: #604e43;
+}
+.main-navigation .active-menu:active {
+  opacity: 0.3;
+}
 .header-logo {
   position: absolute;
   left: 50%;
@@ -124,6 +133,7 @@ img {
   letter-spacing: 0.1px;
 }
 .features-desc {
+  color: #ffffff;
   float: left;
   width: 310px;
   height: 180px;
@@ -131,21 +141,28 @@ img {
   padding: 38px 45px;
   text-align: center;
 }
-.square,
-.road,
-.tourists {
+.features .square,
+.features .road,
+.features .tourists {
+  color: inherit;
   padding: 32px 60px;
   background-color: #eeeeee;
   width: 280px;
   height: 193px;
 }
 .features-desc h2 {
+  color: #ffffff;
   text-align: center;
   padding: 0 75px;
   line-height: 21px;
   margin: 0;
   margin-top: 17px;
   margin-bottom: 24px;
+}
+.square h2,
+.road h2,
+.tourists h2 {
+  color: inherit;
 }
 .features-number {
   text-align: center;
@@ -179,8 +196,6 @@ img {
 .recomendations-item  h3 {
   margin-bottom: 25px;
   margin-top: 106px;
-}
-.recomendations-item p {
 }
 .housing {
   background-image: url("../img/housing-icon.png");
@@ -265,8 +280,7 @@ img {
   animation: bounce 0.6s;
 }
 .date-choose {
-  margin-bottom: 27px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   position: relative;
 }
 .date-choose label {
@@ -291,15 +305,15 @@ img {
   border-right: none;
 }
 .date-choose input:hover {
+  background-color: #ebebeb;
+}
+.date-choose input:active {
   width: 307px;
   height: 34px;
   background-color: #ffffff;
   border-top: 2px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
-}
-.date-choose input:active {
-  background-color: #ebebeb;
 }
 .date-choose button {
   display: inline-block;
@@ -315,10 +329,10 @@ img {
   cursor: pointer;
 }
 .date-choose button:hover {
-  background-position: 0 -42px;  
+  background-position: 0 -84px;
 }
 .date-choose button:active {
-  background-position: 0 -85px;
+  background-position: 0 -42px;
 }
 .guests {
   position: relative;
@@ -423,11 +437,12 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  cursor: pointer;
 }
-.form-button input:hover {
+.form-button:hover {
   background-color: #669ec0;
 }
-.form-button input:active {
+.form-button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -463,6 +478,7 @@ img {
   background-color: #81b3d2;
   position: relative;
   margin-right: 2px;
+  margin-bottom: 5px;
 }
 .social-btn:hover {
   background-color: #669ec0;
@@ -501,11 +517,7 @@ img {
   width: 200px;
   float: left;
   padding: 35px 100px;
-}
-.footer-copyright span {
-  display: block;
-  float: left;
-  margin-top: 14px;
+  line-height: 47px;
 }
 .footer-copyright .author-logo {
   display: block;
@@ -525,11 +537,12 @@ img {
   background-position: -10px -69px;
 }
 .filter {
+  color: #ffffff;
   background-color: #30546c;
   background-image: url(../img/filter-background.jpg);
   box-sizing: border-box;
-  padding: 30px 59px;
-  padding-bottom: 8px;
+  padding: 27px 59px;
+  padding-bottom: 6px;
 }
 input[type="checkbox"] {
   display: none;
@@ -674,11 +687,14 @@ input[type="checkbox"]:checked:disabled + label::after {
   width: 0;
   height: 0;
 }
-.triangles .triangle-down:hover {
-  border-top: 11px solid #000000;
-}
 .triangles .triangle-up:hover {
   border-bottom: 11px solid #000000;
+}
+.triangles .triangle-down:active {
+  border-top: 11px solid #81b3d2;
+}
+.triangles .triangle-up:active {
+  border-bottom: 11px solid #81b3d2;
 }
 .catalog-item-img {
   float: left;
@@ -686,7 +702,7 @@ input[type="checkbox"]:checked:disabled + label::after {
 .catalog-item {
   border-bottom: 1px solid #e5e5e5;
   padding: 30px 72px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 .catalog-item:last-child {
   margin-bottom: 119px;
@@ -805,21 +821,26 @@ input[type="checkbox"]:checked:disabled + label::after {
 }
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 66px;
+  width: 93px;
+  padding-left: 65px;
   margin-top: -4px;
 }
+.price-controls .max-price {
+  width: 102px;
+  padding-left: 53px;
+}
 .price-controls input {
+  line-height: 21px;
   width: 50px;
   margin: 0;
   color: inherit;
-  font: inherit;
   background: none;
   border: none;
+  margin-top: -1px;
 }
 .range-controls {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 .range-controls .scale {
   height: 2px;
@@ -854,8 +875,7 @@ input[type="checkbox"]:checked:disabled + label::after {
   display: block;
   margin: 0 auto;
   margin-right: 95px;
-  padding: 6px 29px;
-  letter-spacing: 1.2px;
+  padding: 6px 33px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
